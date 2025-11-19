@@ -1,0 +1,18 @@
+# Core LangGraph and LangChain dependencies
+langgraph
+langchain-core
+langchain-aws
+
+# Data processing
+pandas
+
+# Web requests (for weather API)
+requests
+
+# Streamlit for UI
+streamlit
+
+# Standard library modules (no installation needed):
+# - typing
+# - json
+# - os

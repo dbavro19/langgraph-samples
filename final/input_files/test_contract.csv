@@ -1,0 +1,34 @@
+Business Rule,Description,Business Term
+Trade Settlement Date: This field is required and cannot be empty,Trade date validation,Trade Settlement Date
+Trade Settlement Date: Settlement date must be a valid business day,Business day validation,Trade Settlement Date
+Trade Settlement Date: Date must be in ISO 8601 format (YYYY-MM-DD),Date format specification,Trade Settlement Date
+Trade Settlement Date: Settlement date cannot be in the future,Future date restriction,Trade Settlement Date
+CUSIP Identifier: CUSIP must be exactly 9 characters in length,CUSIP length validation,CUSIP Identifier
+CUSIP Identifier: The CUSIP code must be 9 characters,CUSIP format requirement,CUSIP Identifier
+CUSIP Identifier: This field is required and must not be null,CUSIP nullability rule,CUSIP Identifier
+Account Classification Type: Value must be chosen from the approved list of account types,Account type domain rule,Account Classification Type
+Account Classification Type: This field cannot be empty,Account type nullability,Account Classification Type
+"Counterparty Credit Rating: Rating must be one of: AAA, AA, A, BBB, BB, B, CCC, CC, C, D",Credit rating enumeration,Counterparty Credit Rating
+Counterparty Credit Rating: The credit rating value must be selected from standard rating values,Credit rating domain constraint,Counterparty Credit Rating
+Counterparty Credit Rating: This field is required only if counterparty type is external,Conditional credit rating requirement,Counterparty Credit Rating
+Portfolio Net Asset Value: Value must be greater than zero,NAV positive constraint,Portfolio Net Asset Value
+Portfolio Net Asset Value: NAV cannot be negative and cannot be zero,NAV non-negative and non-zero rule,Portfolio Net Asset Value
+Portfolio Net Asset Value: Must be a positive number,NAV positive value rule,Portfolio Net Asset Value
+Regulatory Reporting Flag: This field is required,Reporting flag requirement,Regulatory Reporting Flag
+Regulatory Reporting Flag: Value must be either TRUE or FALSE,Boolean value constraint,Regulatory Reporting Flag
+Regulatory Reporting Flag: Field must be populated with a boolean value,Boolean type requirement,Regulatory Reporting Flag
+Broker Dealer ID: The value must be chosen from an approved list of registered broker dealers,Broker dealer domain rule,Broker Dealer ID
+Broker Dealer ID: This field is required only if trade type is agency,Conditional broker dealer requirement,Broker Dealer ID
+Broker Dealer ID: Broker ID must be a valid registered entity,Broker registration validation,Broker Dealer ID
+"Market Cap Tier: Value must be one of: Large Cap, Mid Cap, Small Cap, Micro Cap",Market cap enumeration,Market Cap Tier
+Market Cap Tier: This field cannot be null,Market cap nullability,Market Cap Tier
+Dividend Yield Percentage: Value must be between 0 and 100,Dividend yield range constraint,Dividend Yield Percentage
+Dividend Yield Percentage: Percentage cannot be negative,Non-negative dividend rule,Dividend Yield Percentage
+Dividend Yield Percentage: Yield must be a valid percentage value between 0 and 100,Percentage range validation,Dividend Yield Percentage
+Maturity Date: This field is required only if asset type is fixed income,Conditional maturity requirement,Maturity Date
+Maturity Date: Date must be after issue date,Maturity vs issue date logic,Maturity Date
+Maturity Date: Cannot be empty for bond securities,Bond maturity requirement,Maturity Date
+Trade Execution Venue: Venue must be selected from list of approved exchanges,Exchange domain constraint,Trade Execution Venue
+LEI Code: LEI must be exactly 20 alphanumeric characters,LEI length and format rule,LEI Code
+LEI Code: Legal Entity Identifier must be 20 characters,LEI format specification,LEI Code
+LEI Code: This field is required for institutional counterparties only,Conditional LEI requirement,LEI Code

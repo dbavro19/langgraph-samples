@@ -1,0 +1,36 @@
+business_rule,Description,business_term
+"Trade Settlement Date: This field is required and cannot be empty",Required field,Trade Settlement Date
+"Trade Settlement Date: Settlement date must be a valid business day",Business day check,Trade Settlement Date
+"Trade Settlement Date: Date cannot be more than 30 days in the past",Historical limit,Trade Settlement Date
+"CUSIP Identifier: CUSIP must be 9 characters",Length requirement,CUSIP Identifier
+"CUSIP Identifier: CUSIP cannot be null",Nullability requirement,CUSIP Identifier
+"CUSIP Identifier: CUSIP must contain only uppercase alphanumeric characters",Character type requirement,CUSIP Identifier
+"Account Classification Type: Value must be chosen from the approved list of account types",Domain constraint,Account Classification Type
+"Account Classification Type: This field is required",Nullability,Account Classification Type
+"Counterparty Credit Rating: Rating must be one of: AAA, AA, A, BBB, BB, B, CCC, CC, C, D",Rating enumeration,Counterparty Credit Rating
+"Counterparty Credit Rating: This field is required only if counterparty type is external",Conditional requirement,Counterparty Credit Rating
+"Counterparty Credit Rating: Rating must be from a recognized agency",Rating source validation,Counterparty Credit Rating
+"Portfolio Net Asset Value: Value must be greater than 1",Minimum value stricter,Portfolio Net Asset Value
+"Portfolio Net Asset Value: NAV cannot be negative",Non-negative constraint,Portfolio Net Asset Value
+"Regulatory Reporting Flag: This field is required",Required field,Regulatory Reporting Flag
+"Regulatory Reporting Flag: Value must be TRUE or FALSE",Boolean constraint,Regulatory Reporting Flag
+"Broker Dealer ID: The value must be chosen from an approved list of registered broker dealers",Domain constraint,Broker Dealer ID
+"Broker Dealer ID: This field is required only if trade type is agency",Conditional requirement,Broker Dealer ID
+"Market Cap Tier: Value must be one of: Large Cap, Mid Cap, Small Cap, Micro Cap",Tier enumeration,Market Cap Tier
+"Market Cap Tier: This field cannot be null",Nullability,Market Cap Tier
+"Dividend Yield Percentage: Value must be between 0 and 100",Range constraint,Dividend Yield Percentage
+"Dividend Yield Percentage: Yield must be a valid percentage value between 0 and 100",Percentage validation,Dividend Yield Percentage
+"Maturity Date: This field is required only if asset type is fixed income",Conditional requirement,Maturity Date
+"Maturity Date: Date must be after issue date",Logical date constraint,Maturity Date
+"Maturity Date: Maturity date must be at least 1 year after issue date",Minimum duration requirement,Maturity Date
+"Trade Execution Venue: Venue must be selected from list of approved exchanges",Exchange constraint,Trade Execution Venue
+"Trade Execution Venue: Venue cannot be empty",Nullability,Trade Execution Venue
+"LEI Code: LEI must be exactly 20 alphanumeric characters",Format requirement,LEI Code
+"LEI Code: This field is required for institutional counterparties only",Conditional requirement,LEI Code
+"ESG Score: ESG Score must be between 0 and 100",Range constraint,ESG Score
+"ESG Score: ESG score should be from 0 to 100",Range requirement,ESG Score
+"ESG Score: ESG Score cannot be null",Nullability,ESG Score
+"Sustainability Rating: Rating must be one of: A, B, C, D, E",Rating categories,Sustainability Rating
+"Sustainability Rating: This field is required for ESG-focused funds only",Conditional requirement,Sustainability Rating
+"Carbon Footprint: Value must be a positive number",Positive constraint,Carbon Footprint
+"Carbon Footprint: Carbon footprint must be greater than or equal to 0",Non-negative constraint,Carbon Footprint

@@ -1,0 +1,25 @@
+# Core LangChain and LangGraph
+langgraph>=0.2.0
+langchain-core>=0.3.0
+langchain-aws>=0.2.0
+
+# AWS for Bedrock
+boto3>=1.35.0
+botocore>=1.35.0
+
+# Data processing
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Pydantic for data validation
+pydantic>=2.9.0
+
+# Excel support (optional but recommended)
+openpyxl>=3.1.0
+
+# Additional utilities
+python-dotenv>=1.0.0  # For loading .env files
+typing-extensions>=4.12.0
+
+# UI
+gradio>=4.0.0
